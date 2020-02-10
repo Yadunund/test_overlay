@@ -5,7 +5,7 @@ jobs:
   ros2:
     runs-on: ubuntu-18.04
     container:
-      image: docker://osrf/gazebo:libgazebo9
+      image: docker://gazebo:libgazebo9
 
     steps:
     - name: gazebo
