@@ -11,5 +11,5 @@ jobs:
     - name: gazebo
       shell: bash
       run: |
-        sudo apt install libgazebo9
+        curl -sSL http://get.gazebosim.org | sh
         gazebo
