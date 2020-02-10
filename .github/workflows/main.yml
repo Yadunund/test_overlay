@@ -5,10 +5,11 @@ jobs:
   ros2:
     runs-on: ubuntu-18.04
     container:
-      image: docker://gazebo:libgazebo9
+      image: docker://ros:eloquent-ros-base-bionic, docker://gazebo:libgazebo9
 
     steps:
     - name: gazebo
       shell: bash
       run: |
-        gazebo demo.world
+        source /opt/ros/eloquent.setup.bash
+        gazebo
