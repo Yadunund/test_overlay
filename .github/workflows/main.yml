@@ -1,0 +1,13 @@
+name: build
+on: push
+jobs:
+
+  ros2:
+    runs-on: ubuntu-18.04
+    container:
+      image: docker://ros:eloquent-ros-base-bionic    
+    steps:
+    - name: gazebo
+      shell: bash
+      run: |
+        gazebo9
