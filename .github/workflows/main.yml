@@ -9,7 +9,6 @@ jobs:
 
     steps:
     - name: gazebo
-      shell: bash
       run: |
         sudo apt update
         sudo apt install curl
