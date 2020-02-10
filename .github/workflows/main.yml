@@ -14,4 +14,4 @@ jobs:
         sudo apt update
         sudo apt install curl
         curl -sSL http://get.gazebosim.org | sh
-        gazebo
+        gzserver
