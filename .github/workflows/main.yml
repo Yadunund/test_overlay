@@ -11,4 +11,4 @@ jobs:
     - name: gazebo
       shell: bash
       run: |
-        gazebo9
+        gazebo
