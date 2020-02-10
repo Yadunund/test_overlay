@@ -11,5 +11,6 @@ jobs:
     - name: gazebo
       shell: bash
       run: |
+        sudo apt-get install curl
         curl -sSL http://get.gazebosim.org | sh
         gazebo
